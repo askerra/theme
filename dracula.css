@@ -8,8 +8,7 @@
  * @size 4:3 960px 720px
  * @size 16:9 1280px 720px
  */
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900|IBM+Plex+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 :root {
   --dracula-background: #282a36;
@@ -160,15 +159,70 @@ section.center-center {
   height: 100%;
 }
 
-section.jumbo a,
-section.jumbo h1 {
+section.jumbo {
+  border: 2px solid var(--dracula-cyan);
+}
+
+section.slide__title {
+}
+
+section.slide__section2 h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   font-weight: 600;
   text-align: center;
-  font-size: 150px;
+  font-size: 100cqb;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -30px;
+  line-height: 0.8;
+  max-width: 100%;
+  text-shadow:
+    1px -1px 0 var(--dracula-pink),
+    -1px 2px 1px var(--dracula-pink),
+    -2px 4px 1px var(--dracula-pink),
+    -3px 6px 1px var(--dracula-pink),
+    -4px 8px 1px var(--dracula-pink),
+    -5px 10px 1px var(--dracula-pink),
+    -6px 12px 1px var(--dracula-pink),
+    -7px 14px 1px var(--dracula-pink),
+    -8px 16px 1px var(--dracula-pink),
+    -9px 18px 1px var(--dracula-pink),
+    -10px 20px 1px var(--dracula-pink),
+    -11px 22px 1px var(--dracula-pink),
+    -12px 24px 1px var(--dracula-pink),
+    -13px 26px 1px var(--dracula-pink),
+    -14px 28px 1px var(--dracula-pink),
+    -15px 30px 1px var(--dracula-pink),
+    -16px 32px 1px var(--dracula-pink),
+    -17px 34px 1px var(--dracula-pink);
+}
+
+section.slide__section h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+  text-align: center;
+  font-size: 4.8rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: -15px;
   line-height: 0.8;
+  max-width: 100%;
+  color: var(--dracula-orange);
+  transform: translate(-180px, -130px);
+  text-shadow:
+    2rem 4rem 0 var(--dracula-cyan),
+    4rem 8rem 0 var(--dracula-pink),
+    6rem 12rem 0 var(--dracula-foreground),
+    8rem 16rem 0 var(--dracula-red),
+    10rem 20rem 0 var(--dracula-green);
 }
 
 svg[data-marp-fitting="svg"] {
@@ -182,7 +236,8 @@ h4,
 h5,
 h6 {
   margin: 0.5em 0 0 0;
-  color: var(--dracula-pink);
+  color: var(--dracula-foreground);
+  font-family: "Oswald", sans-serif;
 }
 h1 strong,
 h2 strong,
@@ -306,7 +361,7 @@ table td {
 
 section {
   font-size: 35px;
-  font-family: "IBM Plex Sans";
+  font-family: "Oswald Light", sans-serif;
   line-height: 1.35;
   letter-spacing: 1.25px;
   padding: 70px;
