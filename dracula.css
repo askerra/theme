@@ -163,22 +163,34 @@ section.jumbo {
   border: 2px solid var(--dracula-cyan);
 }
 
-section.slide__title {
-}
-
-section.slide__section2 h1 {
+section.slide__title h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: -2px;
+  line-height: 1;
+  max-width: 100%;
+}
+
+section.slide__part h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: var(--dracula-foreground);
+  align-items: center;
   font-weight: 600;
   text-align: center;
-  font-size: 100cqb;
+  font-size: 8rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: -30px;
-  line-height: 0.8;
+  line-height: 1;
   max-width: 100%;
   text-shadow:
     1px -1px 0 var(--dracula-pink),
@@ -201,7 +213,7 @@ section.slide__section2 h1 {
     -17px 34px 1px var(--dracula-pink);
 }
 
-section.slide__section h1 {
+section.slide__chapter h3 {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -209,6 +221,7 @@ section.slide__section h1 {
   height: 100%;
   font-weight: 600;
   text-align: center;
+  text-wrap: nowrap;
   font-size: 4.8rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -223,6 +236,38 @@ section.slide__section h1 {
     6rem 12rem 0 var(--dracula-foreground),
     8rem 16rem 0 var(--dracula-red),
     10rem 20rem 0 var(--dracula-green);
+}
+
+section.slide__section h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: -2px;
+  line-height: 1;
+  max-width: 100%;
+}
+
+section.slide__section__subtitle h5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 200;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: -2px;
+  line-height: 1;
+  max-width: 100%;
+}
+
+section.slide__algebra {
 }
 
 svg[data-marp-fitting="svg"] {
