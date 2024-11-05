@@ -270,6 +270,12 @@ section.slide__section__subtitle h5 {
 section.slide__algebra {
 }
 
+section.slide__tiktok {
+  font-size: 0.8rem;
+  width: 540px;
+  height: 960px;
+}
+
 svg[data-marp-fitting="svg"] {
   max-height: 580px;
 }
